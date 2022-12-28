@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>Teufelsrochen Guestbook</title>
+</head>
+
+<body>
+    <section class="guestbook">
+        <h1>Teufelsrochen Guestbook</h1>
+        <form method="POST" action="/posting" class="form">
+            <div>
+                <label for="name">Name</label>
+                <input type="text" name="name" placeholder="Tadeus" required>
+            </div>
+            <div>
+                <label for="email">E-Mail</label>
+                <input type="email" name="email" placeholder="example@guest.com" required>
+            </div>
+            <div><textarea name="textarea" id="textarea" cols="40" rows="10"></textarea>
+            </div>
+            <input type="submit" value="Submit" class="button">
+        </form>
+    </section>
+    <section class="postings">
+        <h3>Guest entries:</h3>
+        <%- include('./partials/posting', { postings }) %>
+    </section>
+</body>
+
+</html>

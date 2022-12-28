@@ -1,0 +1,11 @@
+<% postings.forEach ((post)=> { %>
+    <article class="posting">
+        <p>
+            <%=post.name %>, <%= post.email%> writes:
+        </p>
+        <hr>
+        <p>Guest entries:
+            <%= post.textInput %>
+        </p>
+    </article>
+    <%})%>

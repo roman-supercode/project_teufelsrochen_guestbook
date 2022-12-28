@@ -1,0 +1,61 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.guestbook {
+    background-color: #F2E9DE;
+    width: 50%;
+    margin: 0 auto;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.guestbook h1 {
+    text-align: center;
+    padding: 1rem;
+    font-size: 2rem;
+}
+
+.guestbook .form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.form div label {
+    display: block;
+}
+
+.form div input {
+    padding: 3px 6px;
+}
+
+.form div textarea {
+    resize: none;
+}
+
+.button {
+    padding: 5px 8px;
+    margin: 1rem;
+}
+
+.postings {
+    width: 50%;
+    margin: 0 auto;
+    background-color: blanchedalmond;
+    padding: 1rem;
+}
+
+.postings article {
+    border-bottom: 1px solid black;
+}
+
+.postings p {
+    margin: 3px 0;
+}
